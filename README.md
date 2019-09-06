@@ -88,5 +88,11 @@ If we are intrested in chaging the attribute text then we can use intl.formatted
 </button>
 ```
 
+## Testing 
+Uncomment this in App.js to switch to French 
+```
+//locale = 'fr-FR'; // Forcing for testing
+```
+
 
 
