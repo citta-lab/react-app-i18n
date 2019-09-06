@@ -82,6 +82,7 @@ If we are intrested in chaging the attribute text then we can use intl.formatted
 //before
 <button title={'open'}>Submit</button>
 
+// after
 <button title={intl.formatMessage({ id: 'menu.open' })}> 
     <FormattedMessage id='submit'></FormattedMessage>
 </button>

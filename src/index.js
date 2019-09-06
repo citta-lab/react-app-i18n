@@ -12,8 +12,8 @@ import messages from 'react-trasnlation';
 
 
 var locale = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'en-US';
+//locale = 'fr-FR'; // Forcing for testing
 const flattenedMessage = flatten(messages[locale]);
-console.log(locale)
 
 ReactDOM.render(
     <IntlProvider locale={locale} messages={flattenedMessage}>
