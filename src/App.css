@@ -31,3 +31,26 @@
     transform: rotate(360deg);
   }
 }
+
+.borderDiv {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  z-index: 15;
+  margin: -100px 0 0 -150px;
+}
+
+.cardDiv {
+  width: 600px;
+  height: 120px;
+  padding: 40px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+img {
+  width: 10%;
+  height: 10%;
+  
+  
+}

@@ -12,7 +12,7 @@ import messages from 'react-trasnlation';
 
 
 var locale = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'en-US';
-//locale = 'fr-FR'; // Forcing for testing
+locale = 'fr-FR'; // Forcing for testing
 const flattenedMessage = flatten(messages[locale]);
 
 ReactDOM.render(
