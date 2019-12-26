@@ -4,19 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-
 import { IntlProvider } from 'react-intl';
-import flatten from 'flat'
-
-import messages from 'react-trasnlation/translations/example1/index';
+import { locale, manageTranslation, interactive } from 'react-trasnlation'
 
 
-var locale = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'en-US';
-locale = 'fr-FR'; // Forcing for testing
-const flattenedMessage = flatten(messages[locale]);
+const msg = manageTranslation(locale, interactive);
 
 ReactDOM.render(
-    <IntlProvider locale={locale} messages={flattenedMessage}>
+    <IntlProvider locale={locale} messages={msg}>
         <App />
     </IntlProvider>,
     document.getElementById('root')
