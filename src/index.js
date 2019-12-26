@@ -8,11 +8,11 @@ import * as serviceWorker from './serviceWorker';
 import { IntlProvider } from 'react-intl';
 import flatten from 'flat'
 
-import messages from 'react-trasnlation';
+import messages from 'react-trasnlation/translations/example1/index';
 
 
 var locale = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'en-US';
-//locale = 'fr-FR'; // Forcing for testing
+locale = 'fr-FR'; // Forcing for testing
 const flattenedMessage = flatten(messages[locale]);
 
 ReactDOM.render(
